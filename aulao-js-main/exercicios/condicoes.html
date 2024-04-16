@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de Idade para Votação</title>
+</head>
+<body>
+    <h1>Verifique sua elegibilidade para votar</h1>
+    <label for="age">Insira sua idade:</label>
+    <input type="number" id="age" name="age">
+    <button onclick="checkEligibility()">Verificar</button>
+    <p id="result"></p>
+
+    <script>
+        function checkEligibility() {
+            var age = document.getElementById('age').value; // Captura a idade inserida pelo usuário
+            var message;
+
+            // Verifica se a idade é suficiente para votar
+            if (age >= 18) {
+                message = "Você é elegível para votar.";
+            } else if (age > 0) {
+                message = "Você ainda não é elegível para votar.";
+            } else {
+                message = "Por favor, insira uma idade válida.";
+            }
+
+            // Exibe a mensagem apropriada
+            document.getElementById('result').textContent = message;
+        }
+    </script>
+</body>
+</html>

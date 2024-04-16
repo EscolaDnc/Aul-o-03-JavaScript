@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interatividade com Javascript</title>
+</head>
+<body>
+    <input type="text" id="nomeInput" placeholder="Digite seu nome">
+    <button onclick="saudacao()">Cumprimentar</button>
+    <p id="saudacaoTexto"></p>
+
+    <script>
+        function saudacao() {
+            var nome = document.getElementById('nomeInput').value;
+            document.getElementById('saudacaoTexto').innerText = 'Olá, ' + nome + '!';
+        }
+    </script>
+</body>
+</html>

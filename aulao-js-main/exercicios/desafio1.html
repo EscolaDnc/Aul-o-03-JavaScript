@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Pede ao usuário para inserir sua idade
+var idade = parseInt(window.prompt("Digite sua idade:"));
+
+// Pede ao usuário para confirmar se tem permissão dos pais (apenas se tiver menos de 16 anos)
+var temPermissao = idade < 16 ? window.confirm("Você tem permissão dos seus pais para assistir ao filme?") : false;
+
+// Verifica se o usuário pode assistir ao filme
+var podeAssistir = idade >= 16 || temPermissao;
+
+// Exibe uma mensagem ao usuário sobre a permissão para assistir ao filme
+window.alert("Você " + (podeAssistir ? "pode" : "não pode") + " assistir ao filme.");
+
+    </script>
+</body>
+</html>

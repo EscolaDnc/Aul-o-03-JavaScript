@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// Definindo as variáveis com os ingredientes necessários
+let farinha = 2; // em xícaras
+let ovos = 3; // quantidade de ovos
+let leite = 1; // em xícaras
+let fornoLigado = false; // estado inicial do forno
+
+// Função para preparar o bolo
+function prepararBolo() {
+    // Verifica se o forno está ligado
+    console.log("Forno está ligado?", fornoLigado ? "Sim" : "Não");
+
+    // Se o forno não estiver ligado, não podemos assar o bolo
+    if (!fornoLigado) {
+        console.log("Por favor, ligue o forno antes de começar a assar o bolo.");
+        return; // Interrompe a execução da função aqui
+    }
+
+    // Se o forno estiver ligado, prosseguir com a receita
+    console.log("Forno ligado! Vamos começar a fazer o bolo.");
+    
+    // Combina os ingredientes
+    console.log("Misturando", farinha, "xícaras de farinha,", ovos, "ovos e", leite, "xícara de leite.");
+    
+    // Assando o bolo
+    console.log("Bolo no forno! Aguarde 25 minutos.");
+}
+
+// Suponha que você perceba que esqueceu de ligar o forno e o ligue
+fornoLigado = true; // Atualiza o estado do forno
+
+// Agora vamos preparar o bolo
+prepararBolo();
+
+    </script>
+</body>
+</html>
