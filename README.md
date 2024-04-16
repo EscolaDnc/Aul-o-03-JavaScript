@@ -16,4 +16,4 @@ Para realizar os exercícios, você precisará:
 
 Clone este repositório usando o seguinte comando git:
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/EscolaDnc/Aulao-03-JavaScript
